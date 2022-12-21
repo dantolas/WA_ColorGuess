@@ -23,6 +23,8 @@ function changeDiff(link){
 }
 
 function createOptions(n){
+    guesses = 0;
+    label.innerHTML = "Guess the color";
     let options = document.querySelectorAll('.option');
     options.forEach(option =>{option.remove()});
 
@@ -70,7 +72,7 @@ function createOptions(n){
 
 function checkGuess(button){
     if(button.textContent == ("#"+color)){
-        label.innerHTML = "Suck it";
+        label.innerHTML = "You got it!!";
         var restartButton = document.createElement('button');
         restartButton.id = "restart";
         restartButton.textContent = "Restart the game";
