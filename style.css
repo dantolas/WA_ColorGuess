@@ -1,0 +1,53 @@
+.option{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+#difficulty{
+    display: flex;
+    flex-direction: row;
+}
+
+#difficulty a{
+    margin-left: 3px;
+}
+
+
+#options{
+    display:flex;
+    flex-direction: row;
+    flex-basis: content;
+    background-color: aquamarine;
+}
+
+.option button{
+    all: unset;
+    margin: auto;
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    
+}
+
+.option button:hover{
+    cursor: pointer;
+}
+
+#label{
+    display: flex;
+    flex-direction: row;
+}
+#label p{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #FFFFF9, #FFFFF9);
+}
